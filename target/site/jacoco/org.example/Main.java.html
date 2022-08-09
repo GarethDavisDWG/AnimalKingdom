@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Main.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">untitled</a> &gt; <a href="index.source.html" class="el_package">org.example</a> &gt; <span class="el_source">Main.java</span></div><h1>Main.java</h1><pre class="source lang-java linenums">package org.example;
+import java.util.ArrayList;
+import java.util.Random;
+<span class="fc" id="L4">public class Main {</span>
+
+<span class="fc" id="L6">    static Random rand = new Random();</span>
+<span class="fc" id="L7">    protected static final ArrayList&lt;Cat&gt; catArray = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L8">    protected static final ArrayList&lt;FlyingRat&gt; flyingRatArray = new ArrayList&lt;&gt;();</span>
+    static int random;
+
+    public static void main(String[] args)
+    {
+<span class="nc bnc" id="L13" title="All 2 branches missed.">        for(int i = 0; i &lt; 3; i++) {</span>
+<span class="nc" id="L14">            flyingRatArray.add(new FlyingRat());</span>
+        }
+<span class="nc bnc" id="L16" title="All 2 branches missed.">        for(int i = 0; i &lt; 2; i++) {</span>
+<span class="nc" id="L17">            catArray.add(new Cat());</span>
+        }
+
+<span class="nc" id="L20">        catArray.get(0).setNameFirst(&quot;Bingo&quot;);</span>
+<span class="nc" id="L21">        catArray.get(1).setNameFirst(&quot;Bongo&quot;);</span>
+
+<span class="nc" id="L23">        flyingRatArray.get(0).setNameFirst(&quot;Blungo&quot;);</span>
+<span class="nc" id="L24">        flyingRatArray.get(0).setAgeFirst(6);</span>
+
+<span class="nc" id="L26">        flyingRatArray.get(1).setNameFirst(&quot;Cungo&quot;);</span>
+<span class="nc" id="L27">        flyingRatArray.get(1).setAgeFirst(5);</span>
+
+<span class="nc" id="L29">        flyingRatArray.get(2).setNameFirst(&quot;Dungo&quot;);</span>
+<span class="nc" id="L30">        flyingRatArray.get(2).setAgeFirst(8);</span>
+
+        //breeding
+<span class="nc" id="L33">        System.out.println(&quot;Amount of cats: &quot; + catArray.size());</span>
+
+<span class="nc" id="L35">        catArray.get(0).breed(catArray.get(0), catArray.get(1));</span>
+<span class="nc" id="L36">        catArray.get(2).setNameFirst(&quot;Boingo&quot;);</span>
+<span class="nc" id="L37">        catArray.get(2).setAgeFirst(0);</span>
+
+<span class="nc" id="L39">        System.out.println(catArray.get(2).getName() + &quot; now exists&quot;);</span>
+
+<span class="nc" id="L41">        System.out.println(&quot;Amount of cats: &quot; + catArray.size() + &quot;\n&quot;);</span>
+
+        //cat actions
+<span class="nc" id="L44">        System.out.println(catArray.get(0).eat() + &quot;\n&quot;);</span>
+
+        //bird actions
+<span class="nc" id="L47">        System.out.println(flyingRatArray.get(0).eat());</span>
+
+        //cat killing
+<span class="nc bnc" id="L50" title="All 2 branches missed.">        for(int i = 0; i &lt; flyingRatArray.size(); i++)</span>
+        {
+<span class="nc" id="L52">            System.out.println(catArray.get(random = rand.nextInt(catArray.size())).move(flyingRatArray.get(i).getName()));</span>
+
+<span class="nc" id="L54">            System.out.println(catArray.get(random).kill(flyingRatArray.get(i--)) + &quot;\n&quot;);</span>
+        }
+<span class="nc" id="L56">        System.out.println(&quot;Amount of flying rats &quot; + flyingRatArray.size());</span>
+<span class="nc" id="L57">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

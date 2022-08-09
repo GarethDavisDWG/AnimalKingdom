@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FlyingRat.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">untitled</a> &gt; <a href="index.source.html" class="el_package">org.example</a> &gt; <span class="el_source">FlyingRat.java</span></div><h1>FlyingRat.java</h1><pre class="source lang-java linenums">package org.example;
+
+<span class="fc" id="L3">public class FlyingRat extends Bird implements Flying{</span>
+    private boolean isFlying;
+
+    public void setNameFirst(String name)
+    {
+<span class="nc" id="L8">        setName(name);</span>
+<span class="nc" id="L9">    }</span>
+
+    public void setAgeFirst(int age)
+    {
+<span class="nc" id="L13">        setAge(age);</span>
+<span class="nc" id="L14">    }</span>
+
+    public void setHealthFirst(int health)
+    {
+<span class="nc" id="L18">        setHealth(health);</span>
+<span class="nc" id="L19">    }</span>
+    public boolean isFlying() {
+<span class="nc" id="L21">        return isFlying;</span>
+    }
+
+    public void setFlying(boolean flying) {
+<span class="nc" id="L25">        isFlying = flying;</span>
+<span class="nc" id="L26">    }</span>
+
+    public String eat()
+    {
+<span class="fc" id="L30">        return(getName() + &quot; eats&quot;);</span>
+    }
+
+    @Override
+    public void takeOff() {
+<span class="nc" id="L35">        isFlying = true;</span>
+<span class="nc" id="L36">    }</span>
+
+    @Override
+    public void flight() {
+//nothing to put here yet
+<span class="nc" id="L41">    }</span>
+
+    @Override
+    public void landing() {
+//nothing to put here yet
+<span class="nc" id="L46">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
