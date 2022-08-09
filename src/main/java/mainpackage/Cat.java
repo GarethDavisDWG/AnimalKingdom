@@ -17,12 +17,10 @@ public class Cat extends Mammal{
     }
     public String eat()
     {
-        //amountEaten++;
         return(getName() + " eats");
     }
     public String kill(Animal animal)
     {
-        //animalsKilled++;
         animal.die();
         return(getName() + " kills " + animal.getName());
     }

@@ -6,8 +6,6 @@ public class Main {
     static Random rand = new Random();
     protected static final ArrayList<Cat> catArray = new ArrayList<>();
     protected static final ArrayList<FlyingRat> flyingRatArray = new ArrayList<>();
-    //static int animalsKilled = 0 ;
-    //static int amountEaten = 0;
     static int random;
 
     public static void main(String[] args)
@@ -48,20 +46,13 @@ public class Main {
         //bird actions
         System.out.println(flyingRatArray.get(0).eat());
 
-        //System.out.println("Amount eaten: " + amountEaten + "\n");
-
         //cat killing
         for(int i = 0; i < flyingRatArray.size(); i++)
         {
-            try {
-                System.out.println(catArray.get(random = rand.nextInt(catArray.size())).move(flyingRatArray.get(i).getName()));
+            System.out.println(catArray.get(random = rand.nextInt(catArray.size())).move(flyingRatArray.get(i).getName()));
 
-                System.out.println(catArray.get(random).kill(flyingRatArray.get(i--)));
-                //System.out.println("Animals killed: " + animalsKilled);
-                System.out.println("");
-            } catch (ArrayIndexOutOfBoundsException e) {
-                throw new RuntimeException(e);
-            }
+            System.out.println(catArray.get(random).kill(flyingRatArray.get(i--)));
+            System.out.println("\n");
         }
         System.out.println("Amount of flying rats " + flyingRatArray.size());
     }

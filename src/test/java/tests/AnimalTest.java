@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
- class AnimalTest {
+class AnimalTest {
 
     @Test
      void test_animal_move() {

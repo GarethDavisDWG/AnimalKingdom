@@ -11,11 +11,8 @@ public class Mammal extends Animal{
     {
         if(animal1.getClass() == animal2.getClass())
         {
-            //if(animal1 instanceof Cat)
-            //{
-                System.out.println(animal1.getName() + " breeds with " + animal2.getName());
-                catArray.add(new Cat());
-            //}
+            System.out.println(animal1.getName() + " breeds with " + animal2.getName());
+            catArray.add(new Cat());
         }
     }
 }
