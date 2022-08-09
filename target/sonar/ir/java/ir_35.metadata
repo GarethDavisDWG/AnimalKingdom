@@ -1,0 +1,5 @@
+org.example.Main#main([Ljava/lang/String;)V
+org.example.FlyingRat#instance-init#
+org.example.FlyingRat#<init>()V
+org.example.Cat#instance-init#
+org.example.Cat#<init>()V

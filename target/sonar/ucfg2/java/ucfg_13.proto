@@ -1,0 +1,40 @@
+
+<org.example.Cat#kill(Lorg/example/Animal;)Ljava/lang/String;B
+8C:/JAVA/AnimalKingdom/src/main/java/org/example/Cat.java ("1*þ
+1B
+8C:/JAVA/AnimalKingdom/src/main/java/org/example/Cat.java (²¯
+B
+8C:/JAVA/AnimalKingdom/src/main/java/org/example/Cat.java (
+%0java.lang.String"*org.example.Animal#die()Ljava/lang/String;*
+
+animalorg.example.Animal2die()¯¬
+B
+8C:/JAVA/AnimalKingdom/src/main/java/org/example/Cat.java (
+%1java.lang.String".org.example.Animal#getName()Ljava/lang/String;*
+org.example.Cat2	getName()
+
+B
+8C:/JAVA/AnimalKingdom/src/main/java/org/example/Cat.java ($
+%2java.lang.String"__concat*
+
+%1java.lang.String*	
+ kills º·
+B
+8C:/JAVA/AnimalKingdom/src/main/java/org/example/Cat.java' (7
+%3java.lang.String".org.example.Animal#getName()Ljava/lang/String;*
+
+animalorg.example.Animal2	getName()
+š
+B
+8C:/JAVA/AnimalKingdom/src/main/java/org/example/Cat.java (7
+%4java.lang.String"__concat*
+
+%2java.lang.String*
+
+%3java.lang.String"^
+B
+8C:/JAVA/AnimalKingdom/src/main/java/org/example/Cat.java (9
+
+%4java.lang.String:
+animalorg.example.AnimalB
+org.example.Cat

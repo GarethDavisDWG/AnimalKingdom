@@ -1,0 +1,21 @@
+
+-org.example.FlyingRat#eat()Ljava/lang/String;H
+>C:/JAVA/AnimalKingdom/src/main/java/org/example/FlyingRat.java ("1*ˆ
+1H
+>C:/JAVA/AnimalKingdom/src/main/java/org/example/FlyingRat.java (»¸
+H
+>C:/JAVA/AnimalKingdom/src/main/java/org/example/FlyingRat.java (
+%0java.lang.String".org.example.Animal#getName()Ljava/lang/String;*
+org.example.FlyingRat2	getName()”
+‘
+H
+>C:/JAVA/AnimalKingdom/src/main/java/org/example/FlyingRat.java ("
+%1java.lang.String"__concat*
+
+%0java.lang.String*	
+ eats"d
+H
+>C:/JAVA/AnimalKingdom/src/main/java/org/example/FlyingRat.java ($
+
+%1java.lang.StringB
+org.example.FlyingRat

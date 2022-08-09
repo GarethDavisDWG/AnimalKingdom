@@ -1,0 +1,4 @@
+org.example.Mammal#breed(Lorg/example/Animal;Lorg/example/Animal;)V
+java.lang.Object#getClass()Ljava/lang/Class;
+org.example.Cat#instance-init#
+org.example.Cat#<init>()V

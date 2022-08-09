@@ -1,0 +1,3 @@
+org.example.Bird#breed(Lorg/example/Animal;Lorg/example/Animal;)V
+org.example.FlyingRat#instance-init#
+org.example.FlyingRat#<init>()V

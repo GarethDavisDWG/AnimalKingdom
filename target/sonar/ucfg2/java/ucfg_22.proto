@@ -1,0 +1,31 @@
+
+=org.example.Animal#move(Ljava/lang/String;)Ljava/lang/String;E
+;C:/JAVA/AnimalKingdom/src/main/java/org/example/Animal.java ("1*§
+1E
+;C:/JAVA/AnimalKingdom/src/main/java/org/example/Animal.java   (µ²
+E
+;C:/JAVA/AnimalKingdom/src/main/java/org/example/Animal.java   (
+%0java.lang.String".org.example.Animal#getName()Ljava/lang/String;*
+org.example.Animal2	getName()–
+“
+E
+;C:/JAVA/AnimalKingdom/src/main/java/org/example/Animal.java   (,
+%1java.lang.String"__concat*
+
+%0java.lang.String*
+
+ moves to ¦
+£
+E
+;C:/JAVA/AnimalKingdom/src/main/java/org/example/Animal.java   (7
+%2java.lang.String"__concat*
+
+%1java.lang.String*
+
+locationjava.lang.String"a
+E
+;C:/JAVA/AnimalKingdom/src/main/java/org/example/Animal.java   (9
+
+%2java.lang.String:
+locationjava.lang.StringB
+org.example.Animal
