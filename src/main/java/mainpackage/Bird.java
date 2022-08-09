@@ -18,11 +18,11 @@ public class Bird extends Animal{
                 flyingRatArray.add(new FlyingRat());
             }
             else {
-                return;
+
             }
         }
         else{
-            return;
+
         }
     }
 }

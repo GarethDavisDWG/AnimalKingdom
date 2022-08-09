@@ -4,8 +4,8 @@ import java.util.Random;
 public class Main {
 
     static Random rand = new Random();
-    public static ArrayList<Cat> catArray = new ArrayList<>();
-    public static ArrayList<FlyingRat> flyingRatArray = new ArrayList<>();
+    public static final ArrayList<Cat> catArray = new ArrayList<>();
+    public static final ArrayList<FlyingRat> flyingRatArray = new ArrayList<>();
     static int animalsKilled = 0 ;
     static int amountEaten = 0;
     static int random;

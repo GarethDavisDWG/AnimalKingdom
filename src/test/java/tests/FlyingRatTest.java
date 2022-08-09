@@ -5,9 +5,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class FlyingRatTest {
+ class FlyingRatTest {
     @Test
-    public void test_flyingrat_eat()
+     void test_flyingrat_eat()
     {
         FlyingRat flyingRat = new FlyingRat();
 
