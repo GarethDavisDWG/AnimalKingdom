@@ -1,6 +1,6 @@
 package mainpackage;
 
-public class Animal extends Object{
+public class Animal extends Main {
     private String name;
     private int age;
     private int health;

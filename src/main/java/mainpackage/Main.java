@@ -1,12 +1,14 @@
 package mainpackage;
 import java.util.ArrayList;
 import java.util.Random;
-public class Object {
+public class Main {
 
     static Random rand = new Random();
-    public static ArrayList<Cat> catArray = new ArrayList<Cat>();
-    public static ArrayList<FlyingRat> flyingRatArray = new ArrayList<FlyingRat>();
-    static int animalsKilled = 0, amountEaten = 0, random;
+    public static ArrayList<Cat> catArray = new ArrayList<>();
+    public static ArrayList<FlyingRat> flyingRatArray = new ArrayList<>();
+    static int animalsKilled = 0 ;
+    static int amountEaten = 0;
+    static int random;
 
     public static void main(String[] args)
     {
