@@ -11,21 +11,21 @@ public class AnimalTest {
     @Test
     public void test_animal_move() {
         Animal testAnimal = new Animal();
-        assertEquals("The animal moves", testAnimal.move(), "this is not it");
+        assertEquals("null moves to park", testAnimal.move("park"), "this is not it");
     }
     @Test
     public void test_animal_sleep() {
         Animal testAnimal = new Animal();
-        assertEquals("The animal sleeps", testAnimal.sleep(), "this is not it");
+        assertEquals("null sleeps", testAnimal.sleep(), "this is not it");
     }
     @Test
     public void test_animal_poop() {
         Animal testAnimal = new Animal();
-        assertEquals("The animal poops", testAnimal.poop(), "this is not it");
+        assertEquals("null poops", testAnimal.poop(), "this is not it");
     }
     @Test
     public void test_animal_die() {
         Animal testAnimal = new Animal();
-        assertEquals("The animal dies", testAnimal.die(), "this is not it");
+        assertEquals("null dies", testAnimal.die(), "this is not it");
     }
 }

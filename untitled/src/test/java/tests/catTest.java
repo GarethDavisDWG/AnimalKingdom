@@ -13,14 +13,14 @@ public class catTest {
     {
         Cat testCat = new Cat();
 
-        assertEquals(8, testCat.getAge(), "this is not it");
+        assertEquals(0, testCat.getAge(), "this is not it");
     }
 
     @Test
     public void test_get_cat_eat()
     {
         Cat testCat = new Cat();
-        assertEquals("Bingo eats", testCat.eat(), "this is not it");
+        assertEquals("null eats", testCat.eat(), "this is not it");
     }
 
     @Test
@@ -28,6 +28,6 @@ public class catTest {
     {
         Cat testCat = new Cat();
         FlyingRat flyingRat = new FlyingRat();
-        assertEquals("The cat kills mainPackage.FlyingRat", testCat.kill(flyingRat), "this is not it");
+        assertEquals("null kills null", testCat.kill(flyingRat), "this is not it");
     }
 }

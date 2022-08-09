@@ -12,6 +12,11 @@ public class FlyingRat extends Bird implements Flying{
     {
         setAge(age);
     }
+
+    public void setHealthFirst(int health)
+    {
+        setHealth(health);
+    }
     public boolean isFlying() {
         return isFlying;
     }

@@ -5,11 +5,18 @@ public class Bird extends Animal{
 
     public String breathe()
     {
-        return("The bird breathes");
+        return(this.getName() + " breathes");
     }
 
-    public String breed()
+    public void breed(Animal animal1, Animal animal2)
     {
-        return("The bird lays eggs");
+        if(animal1.getClass() == animal2.getClass())
+        {
+            if(animal1 instanceof FlyingRat)
+            {
+                System.out.println(animal1.getName() + " breeds with " + animal2.getName());
+                flyingRatArray.add(new FlyingRat());
+            }
+        }
     }
 }

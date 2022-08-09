@@ -2,7 +2,15 @@ package mainPackage;
 
 public class Animal extends Object{
     private String name;
-    private int age;
+    private int age, health;
+
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
 
     public int getAge() {
         return age;
@@ -18,21 +26,28 @@ public class Animal extends Object{
     public void setName(String name) {
         this.name = name;
     }
-    public String move()
+    public String move(String location)
     {
-        return("The animal moves");
+        return(this.getName() + " moves to " + location);
     }
     public String sleep()
     {
-        return("The animal sleeps");
+        return(this.getName() + " sleeps");
     }
     public String poop()
     {
-        return("The animal poops");
+        return(this.getName() + " poops");
     }
     public String die()
     {
-        System.out.println("The animal dies");
-        return("The animal dies");
+        if(this instanceof Cat) {
+            catArray.remove(this);
+        }
+        else if (this instanceof FlyingRat)
+        {
+            flyingRatArray.remove(this);
+        }
+        System.out.println(this.getName() + " dies");
+        return(this.getName() + " dies");
     }
 }

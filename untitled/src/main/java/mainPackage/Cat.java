@@ -10,6 +10,11 @@ public class Cat extends Mammal{
     {
         setAge(age);
     }
+
+    public void setHealthFirst(int health)
+    {
+        setHealth(health);
+    }
     public String eat()
     {
         amountEaten++;
