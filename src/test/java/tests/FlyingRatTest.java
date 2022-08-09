@@ -12,6 +12,6 @@ public class FlyingRatTest {
     {
         FlyingRat flyingRat = new FlyingRat();
 
-        assertEquals("The FlyingRat eats", flyingRat.eat(), "this is not it");
+        assertEquals("null eats", flyingRat.eat(), "this is not it");
     }
 }
