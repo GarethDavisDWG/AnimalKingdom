@@ -48,7 +48,7 @@ public class Animal extends Main {
         {
             flyingRatArray.remove(this);
         }
-        System.out.println(this.getName() + " dies");
+            System.out.println(this.getName() + " dies");
         return(this.getName() + " dies");
     }
 }

@@ -27,7 +27,7 @@ public class FlyingRat extends Bird implements Flying{
 
     public String eat()
     {
-        amountEaten++;
+        //amountEaten++;
         return(getName() + " eats");
     }
 
