@@ -1,8 +1,9 @@
-package mainPackage;
+package mainpackage;
 
 public class Animal extends Object{
     private String name;
-    private int age, health;
+    private int age;
+    private int health;
 
     public int getHealth() {
         return health;

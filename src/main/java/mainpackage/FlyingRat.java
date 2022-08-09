@@ -1,4 +1,4 @@
-package mainPackage;
+package mainpackage;
 
 public class FlyingRat extends Bird implements Flying{
     private boolean isFlying;
@@ -38,11 +38,11 @@ public class FlyingRat extends Bird implements Flying{
 
     @Override
     public void flight() {
-
+//nothing to put here yet
     }
 
     @Override
     public void landing() {
-
+//nothing to put here yet
     }
 }

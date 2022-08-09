@@ -1,4 +1,4 @@
-package mainPackage;
+package mainpackage;
 
 public class Mammal extends Animal{
 
@@ -15,6 +15,9 @@ public class Mammal extends Animal{
             {
                 System.out.println(animal1.getName() + " breeds with " + animal2.getName());
                 catArray.add(new Cat());
+            }
+            else{
+                return;
             }
         }
     }

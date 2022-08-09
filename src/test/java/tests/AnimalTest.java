@@ -1,7 +1,6 @@
 package tests;
 
-import mainPackage.Animal;
-import mainPackage.Cat;
+import mainpackage.Animal;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

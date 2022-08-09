@@ -1,4 +1,4 @@
-package mainPackage;
+package mainpackage;
 
 public class Bird extends Animal{
 

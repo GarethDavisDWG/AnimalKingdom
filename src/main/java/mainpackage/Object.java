@@ -1,4 +1,4 @@
-package mainPackage;
+package mainpackage;
 import java.util.ArrayList;
 import java.util.Random;
 public class Object {
@@ -6,7 +6,7 @@ public class Object {
     static Random rand = new Random();
     public static ArrayList<Cat> catArray = new ArrayList<Cat>();
     public static ArrayList<FlyingRat> flyingRatArray = new ArrayList<FlyingRat>();
-    public static int animalsKilled = 0, amountEaten = 0, n;
+    static int animalsKilled = 0, amountEaten = 0, random;
 
     public static void main(String[] args)
     {
@@ -52,9 +52,9 @@ public class Object {
         for(int i = 0; i < flyingRatArray.size(); i++)
         {
             try {
-                System.out.println(catArray.get(n =  rand.nextInt(catArray.size())).move(flyingRatArray.get(i).getName()));
+                System.out.println(catArray.get(random = rand.nextInt(catArray.size())).move(flyingRatArray.get(i).getName()));
 
-                System.out.println(catArray.get(n).kill(flyingRatArray.get(i--)));
+                System.out.println(catArray.get(random).kill(flyingRatArray.get(i--)));
                 System.out.println("Animals killed: " + animalsKilled);
                 System.out.println("");
             } catch (ArrayIndexOutOfBoundsException e) {
