@@ -1,4 +1,4 @@
-package mainpackage;
+package org.example;
 import java.util.ArrayList;
 import java.util.Random;
 public class Main {
@@ -51,8 +51,7 @@ public class Main {
         {
             System.out.println(catArray.get(random = rand.nextInt(catArray.size())).move(flyingRatArray.get(i).getName()));
 
-            System.out.println(catArray.get(random).kill(flyingRatArray.get(i--)));
-            System.out.println("\n");
+            System.out.println(catArray.get(random).kill(flyingRatArray.get(i--)) + "\n");
         }
         System.out.println("Amount of flying rats " + flyingRatArray.size());
     }

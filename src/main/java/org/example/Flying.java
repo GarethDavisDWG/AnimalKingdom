@@ -1,4 +1,4 @@
-package mainpackage;
+package org.example;
 
 public interface Flying{
     public void takeOff();

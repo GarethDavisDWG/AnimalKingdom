@@ -1,12 +1,12 @@
-package tests;
+package org.example.test;
 
-import mainpackage.Cat;
-import mainpackage.FlyingRat;
+import org.example.Cat;
+import org.example.FlyingRat;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
- class catTest {
+ class CatTest {
 
     @Test
      void test_get_cat_age()

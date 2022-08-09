@@ -1,6 +1,6 @@
-package tests;
+package org.example.test;
 
-import mainpackage.Animal;
+import org.example.Animal;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

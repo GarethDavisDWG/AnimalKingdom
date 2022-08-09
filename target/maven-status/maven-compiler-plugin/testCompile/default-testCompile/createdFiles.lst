@@ -1,3 +1,3 @@
-tests\AnimalTest.class
-tests\catTest.class
-tests\FlyingRatTest.class
+org\example\test\FlyingRatTest.class
+org\example\test\AnimalTest.class
+org\example\test\CatTest.class

@@ -1,11 +1,11 @@
-package tests;
+package org.example.test;
 
-import mainpackage.FlyingRat;
+import org.example.FlyingRat;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class FlyingRatTest {
+ class FlyingRatTest {
     @Test
     void test_flyingrat_eat()
     {

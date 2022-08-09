@@ -1,4 +1,4 @@
-package mainpackage;
+package org.example;
 
 public class Cat extends Mammal{
     public void setNameFirst(String name)

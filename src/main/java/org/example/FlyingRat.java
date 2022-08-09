@@ -1,4 +1,4 @@
-package mainpackage;
+package org.example;
 
 public class FlyingRat extends Bird implements Flying{
     private boolean isFlying;
@@ -27,7 +27,6 @@ public class FlyingRat extends Bird implements Flying{
 
     public String eat()
     {
-        //amountEaten++;
         return(getName() + " eats");
     }
 
