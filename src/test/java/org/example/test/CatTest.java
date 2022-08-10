@@ -24,7 +24,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
      void test_get_cat_eat()
     {
         Cat testCat = new Cat("cat", 0, 0);
-        assertEquals("null eats", testCat.eat(), "this is not it");
+        assertEquals("cat eats", testCat.eat(), "this is not it");
     }
 
     @Test
@@ -32,7 +32,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
     {
         Cat testCat = new Cat("cat", 0, 0);
         FlyingRat flyingRat = new FlyingRat("rat", 0, 100);
-        assertEquals("null kills null", testCat.kill(flyingRat), "this is not it");
+        assertEquals("cat kills rat", testCat.kill(flyingRat), "this is not it");
     }
 
     @Test
@@ -51,7 +51,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
          Cat testCat = new Cat("cat", 0, 0);
          Cat testCat2 = new Cat("cat", 0, 0);
 
-         assertEquals("null breeds with null", testCat.breed(testCat, testCat2), "this is not it");
+         assertEquals("cat breeds with cat", testCat.breed(testCat, testCat2), "this is not it");
      }
 
      @Test
@@ -67,7 +67,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
      {
          Cat testCat = new Cat("cat", 0, 0);
 
-         assertEquals("null dies", testCat.die(), "this is not it");
+         assertEquals("cat dies", testCat.die(), "this is not it");
      }
 
      @Test
@@ -75,6 +75,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
      {
          Cat testCat = new Cat("cat", 0, 0);
 
-         assertEquals("null breathes", testCat.breathe(), "this is not it");
+         assertEquals("cat breathes", testCat.breathe(), "this is not it");
      }
 }
