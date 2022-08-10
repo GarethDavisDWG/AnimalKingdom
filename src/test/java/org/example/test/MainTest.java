@@ -18,7 +18,7 @@ public class MainTest {
 
         for(int i = 0; i < 3; i++) {
             flyingRatArray.add(new FlyingRat());
-            catArray.add(new Cat());
+            catArray.add(new Cat("cat", 0, 0));
         }
         assertEquals(3, flyingRatArray.size(), "this is not it");
         assertEquals(3, catArray.size(), "this is not it");

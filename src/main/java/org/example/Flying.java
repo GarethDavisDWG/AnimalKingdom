@@ -1,7 +1,7 @@
 package org.example;
 
 public interface Flying{
-    public Boolean takeOff();
-    public Boolean flight();
-    public Boolean landing();
+    public String takeOff();
+    public String flight();
+    public String landing();
 }

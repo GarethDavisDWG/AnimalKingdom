@@ -8,33 +8,23 @@ public class Main {
     protected static final ArrayList<FlyingRat> flyingRatArray = new ArrayList<>();
     static int random;
 
+    private static String[] birdNames = {"Blungo", "Cungo", "Dungo"};
+    private static String[] catNames = {"Bingo", "Bongo", "Boingo"};
+
     public static void main(String[] args)
     {
         for(int i = 0; i < 3; i++) {
-            flyingRatArray.add(new FlyingRat());
+            flyingRatArray.add(new FlyingRat(birdNames[i], 0, 100));
         }
         for(int i = 0; i < 2; i++) {
-            catArray.add(new Cat());
+            catArray.add(new Cat(catNames[i], 0, 100));
         }
-
-        catArray.get(0).setName("Bingo");
-        catArray.get(0).setHealth(100);
-        catArray.get(1).setName("Bongo");
-
-        flyingRatArray.get(0).setName("Blungo");
-        flyingRatArray.get(0).setAge(6);
-
-        flyingRatArray.get(1).setName("Cungo");
-        flyingRatArray.get(1).setAge(5);
-
-        flyingRatArray.get(2).setName("Dungo");
-        flyingRatArray.get(2).setAge(8);
 
         //breeding
         System.out.println("Amount of cats: " + catArray.size());
 
         System.out.println(catArray.get(0).breed(catArray.get(0), catArray.get(1)));
-        catArray.get(2).setName("Boingo");
+        catArray.get(2).setName(catNames[2]);
         catArray.get(2).setAge(0);
 
         System.out.println(catArray.get(2).getName() + " now exists");

@@ -11,6 +11,6 @@ public class Bird extends Animal{
     public void breed(Animal animal1, Animal animal2)
     {
         System.out.println(animal1.getName() + " breeds with " + animal2.getName());
-        flyingRatArray.add(new FlyingRat());
+        flyingRatArray.add(new FlyingRat("rat", 0, 100));
     }
 }
