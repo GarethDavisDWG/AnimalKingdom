@@ -17,25 +17,25 @@ public class Main {
             catArray.add(new Cat());
         }
 
-        catArray.get(0).setNameFirst("Bingo");
-        catArray.get(0).setHealth(catArray.get(0).setHealthFirst(100));
-        catArray.get(1).setNameFirst("Bongo");
+        catArray.get(0).setName("Bingo");
+        catArray.get(0).setHealth(100);
+        catArray.get(1).setName("Bongo");
 
-        flyingRatArray.get(0).setNameFirst("Blungo");
-        flyingRatArray.get(0).setAgeFirst(6);
+        flyingRatArray.get(0).setName("Blungo");
+        flyingRatArray.get(0).setAge(6);
 
-        flyingRatArray.get(1).setNameFirst("Cungo");
-        flyingRatArray.get(1).setAgeFirst(5);
+        flyingRatArray.get(1).setName("Cungo");
+        flyingRatArray.get(1).setAge(5);
 
-        flyingRatArray.get(2).setNameFirst("Dungo");
-        flyingRatArray.get(2).setAgeFirst(8);
+        flyingRatArray.get(2).setName("Dungo");
+        flyingRatArray.get(2).setAge(8);
 
         //breeding
         System.out.println("Amount of cats: " + catArray.size());
 
         System.out.println(catArray.get(0).breed(catArray.get(0), catArray.get(1)));
-        catArray.get(2).setNameFirst("Boingo");
-        catArray.get(2).setAgeFirst(0);
+        catArray.get(2).setName("Boingo");
+        catArray.get(2).setAge(0);
 
         System.out.println(catArray.get(2).getName() + " now exists");
 
@@ -50,7 +50,8 @@ public class Main {
         //cat killing
         for(int i = 0; i < flyingRatArray.size(); i++)
         {
-            System.out.println(catArray.get(random = rand.nextInt(catArray.size())).move(flyingRatArray.get(i).getName()));
+            random = rand.nextInt(catArray.size());
+            System.out.println(catArray.get(random).move(flyingRatArray.get(i).getName()));
 
             System.out.println(catArray.get(random).kill(flyingRatArray.get(i--)) + "\n");
         }

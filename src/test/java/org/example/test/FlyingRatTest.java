@@ -23,7 +23,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
          ArrayList<FlyingRat> flyingRatArray = new ArrayList<>();
 
          flyingRatArray.add(new FlyingRat());
-         flyingRatArray.get(0).setNameFirst("big rat");
+         flyingRatArray.get(0).setName("big rat");
          assertEquals("big rat", flyingRatArray.get(0).getName(), "this is not it");
      }
 
@@ -41,8 +41,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
      void test_flyingrat_get_health()
      {
          FlyingRat flyingRat = new FlyingRat();
+         flyingRat.setHealth(100);
 
-         assertEquals(100, flyingRat.setHealthFirst(100), "this is not it");
+         assertEquals(100, flyingRat.getHealth(), "this is not it");
      }
 
      @Test

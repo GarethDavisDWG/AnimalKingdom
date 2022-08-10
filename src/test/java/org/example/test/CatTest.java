@@ -41,7 +41,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
         ArrayList<Cat> catArray = new ArrayList<>();
 
         catArray.add(new Cat());
-        catArray.get(0).setNameFirst("big cat");
+        catArray.get(0).setName("big cat");
         assertEquals("big cat", catArray.get(0).getName(), "this is not it");
     }
 
@@ -58,8 +58,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
      void test_cat_get_health()
      {
          Cat testCat = new Cat();
-
-         assertEquals(100, testCat.setHealthFirst(100), "this is not it");
+         testCat.setHealth(100);
+         assertEquals(100, testCat.getHealth(), "this is not it");
      }
 
      @Test
