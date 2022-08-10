@@ -18,6 +18,7 @@ public class Main {
         }
 
         catArray.get(0).setNameFirst("Bingo");
+        catArray.get(0).setHealth(catArray.get(0).setHealthFirst(100));
         catArray.get(1).setNameFirst("Bongo");
 
         flyingRatArray.get(0).setNameFirst("Blungo");
@@ -32,7 +33,7 @@ public class Main {
         //breeding
         System.out.println("Amount of cats: " + catArray.size());
 
-        catArray.get(0).breed(catArray.get(0), catArray.get(1));
+        System.out.println(catArray.get(0).breed(catArray.get(0), catArray.get(1)));
         catArray.get(2).setNameFirst("Boingo");
         catArray.get(2).setAgeFirst(0);
 

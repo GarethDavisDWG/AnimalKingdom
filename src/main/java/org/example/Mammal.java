@@ -7,12 +7,12 @@ public class Mammal extends Animal{
         return(this.getName() + " breathes");
     }
 
-    public void breed(Animal animal1, Animal animal2)
+    public String breed(Animal animal1, Animal animal2)
     {
         if(animal1.getClass() == animal2.getClass())
         {
-            System.out.println(animal1.getName() + " breeds with " + animal2.getName());
             catArray.add(new Cat());
         }
+        return (animal1.getName() + " breeds with " + animal2.getName());
     }
 }

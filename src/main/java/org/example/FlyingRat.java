@@ -13,9 +13,9 @@ public class FlyingRat extends Bird implements Flying{
         setAge(age);
     }
 
-    public void setHealthFirst(int health)
+    public int setHealthFirst(int health)
     {
-        setHealth(health);
+       return (health);
     }
     public boolean isFlying() {
         return isFlying;
@@ -31,17 +31,17 @@ public class FlyingRat extends Bird implements Flying{
     }
 
     @Override
-    public void takeOff() {
-        isFlying = true;
+    public Boolean takeOff() {
+        return (isFlying);
     }
 
     @Override
-    public void flight() {
-//nothing to put here yet
+    public Boolean flight() {
+        return (isFlying = true);
     }
 
     @Override
-    public void landing() {
-//nothing to put here yet
+    public Boolean landing() {
+        return (isFlying = false);
     }
 }

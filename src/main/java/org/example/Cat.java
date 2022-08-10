@@ -11,9 +11,9 @@ public class Cat extends Mammal{
         setAge(age);
     }
 
-    public void setHealthFirst(int health)
+    public int setHealthFirst(int health)
     {
-        setHealth(health);
+        return(health);
     }
     public String eat()
     {
@@ -21,7 +21,7 @@ public class Cat extends Mammal{
     }
     public String kill(Animal animal)
     {
-        animal.die();
+        System.out.println(animal.die());
         return(getName() + " kills " + animal.getName());
     }
 }

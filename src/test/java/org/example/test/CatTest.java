@@ -4,6 +4,8 @@ import org.example.Cat;
 import org.example.FlyingRat;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
  class CatTest {
@@ -11,9 +13,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
     @Test
      void test_get_cat_age()
     {
-        Cat testCat = new Cat();
+        ArrayList<Cat> catArray = new ArrayList<>();
 
-        assertEquals(0, testCat.getAge(), "this is not it");
+        catArray.add(new Cat());
+
+        assertEquals(0, catArray.get(0).getAge(), "this is not it");
     }
 
     @Test
@@ -34,8 +38,35 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
     @Test
      void test_cat_name()
     {
-        Cat testCat = new Cat();
-        testCat.setNameFirst("big cat");
-        assertEquals("big cat", testCat.getName(), "this is not it");
+        ArrayList<Cat> catArray = new ArrayList<>();
+
+        catArray.add(new Cat());
+        catArray.get(0).setNameFirst("big cat");
+        assertEquals("big cat", catArray.get(0).getName(), "this is not it");
     }
+
+     @Test
+     void test_cat_breed()
+     {
+         Cat testCat = new Cat();
+         Cat testCat2 = new Cat();
+
+         assertEquals("null breeds with null", testCat.breed(testCat, testCat2), "this is not it");
+     }
+
+     @Test
+     void test_cat_get_health()
+     {
+         Cat testCat = new Cat();
+
+         assertEquals(100, testCat.setHealthFirst(100), "this is not it");
+     }
+
+     @Test
+     void test_cat_die()
+     {
+         Cat testCat = new Cat();
+
+         assertEquals("null dies", testCat.die(), "this is not it");
+     }
 }
